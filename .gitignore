@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual envs ---
+venv/
+.venv/
+backend/venv/
+env/
+
+# --- Secrets / env files ---
+.env
+backend/.env
+backend/notebooks/.env
+backend/utils/.env
+*.local
+
+# --- Node / Next.js ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel/
+node_modules/
+
+# --- OS / editor cruft ---
+.DS_Store
+*.swp
+Screenshot 2025-05-15 at 4.25.44 PM.png
+
+# --- Runtime ---
+backend/uploads/
+
+# --- ML model weights (large; provisioned out-of-band, not committed) ---
+backend/weights/
+backend/ml_training/_eval_out/
+
+# --- Patient data (never commit; contains PII) ---
+backend/data/blood_reports/
